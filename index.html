@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7738bb1866.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rifqi</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" id="nav">
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fa-solid fa-bars" id="btn"></i>
+          <i class="fa-solid fa-xmark" id="close"></i>
+        </label>
+        <a href="/">Rifqi</a>
+        <ul>
+          <li><a href="#about" class="">About</a></li>
+          <li><a href="#skil" class="">Skil</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container" id="home">
+      <img src="asset/img/ilustrasi.png" alt="Rifqi" class="foto-profil" />
+      <h1>
+        Hi! My
+        <br />
+        name is <b>Rifqi</b>
+      </h1>
+      <p>I'M Web Developer</p>
+      <div class="social-links">
+        <a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/m.r.hidayat.1654/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/rifqimuh28" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-rifqi-hidayat-a62664224/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <main>
+      <section class="main ">
+        <!-- About -->
+        <div class="about show" id="about" data-content>
+          <h2>About Me</h2>
+          <h3>Hi! My name is Rifqi</h3>
+          <p>
+            I'm just someone who likes technology and likes programming
+            languages.
+          </p>
+          <p>I started studying programming since 11th grade of high school.</p><br>
+          <a href="https://resume.showwcase.com/rifqihidayat.pdf" download class="btn">Download CV</a>
+        </div>
+        <!-- Skil -->
+        <div class="skil-hero show" id="skil">
+          <div class="skil-mobile">
+            <h2 class="text-skil">My Skill</h2>
+            <div class="skil-area">
+              <div class="skil-card">
+                <i class="fa-regular fa-circle-check"></i>
+                <h3>HTML</h3>
+                <span>Advanced</span>
+              </div>
+              <div class="skil-card">
+                <i class="fa-regular fa-circle-check"></i>
+                <h3>CSS</h3>
+                <span>Advanced</span>
+              </div>
+              <div class="skil-card">
+                <i class="fa-regular fa-circle-check"></i>
+                <h3>Javascript</h3>
+                <span>Intermediate</span>
+              </div>
+              <div class="skil-card">
+                <i class="fa-regular fa-circle-check"></i>
+                <h3>Bootstrap</h3>
+                <span>Advanced</span>
+              </div>
+              <div class="skil-card">
+                <i class="fa-regular fa-circle-check"></i>
+                <h3>React</h3>
+                <span>Basic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="hero show" id="project">
+          <h2>Project</h2>
+          <div class="card-grid" id="conten">
+            
+          </div>
+        </div>
+
+        <!-- contact -->
+        <div class="contact show" id="contact">
+          <div class="card-contact">
+            <h3>Contact us</h3>
+            <p>
+              <input type="text" name="Name" placeholder="Name" />
+              <input type="email" name="email" placeholder="Email" />
+            </p>
+            <p>
+              <input class="subject" type="subject" name="subject" placeholder="Subject" />
+            </p>
+            <p>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Massege"
+              ></textarea>
+            </p>
+            <input class="btn" type="button" value="Send" />
+          </div>
+          <div class="info">
+            <i class="fa-solid fa-message fa-10x"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Fotter -->
+    <div class="fotter">
+      <div>&#169; 2022, <a href="/">Muhammad Rifqi Hidayat</a></div>
+    </div>
+
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>
