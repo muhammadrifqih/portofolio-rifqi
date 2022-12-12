@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="asset/css/style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="asset/img/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="asset/img/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="asset/img/favicon_io/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="asset/img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="asset/img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="asset/img/favicon_io/favicon-16x16.png"
+    />
     <link rel="manifest" href="asset/img/favicon_io/site.webmanifest" />
     <script
       src="https://kit.fontawesome.com/7738bb1866.js"
@@ -67,7 +81,7 @@
     <main>
       <section class="main">
         <!-- About -->
-        <div class="about show" id="about" data-content>
+        <div class="about" id="about" data-content>
           <h2>About Me</h2>
           <h3>Hi! My name is Rifqi</h3>
           <p>
@@ -77,14 +91,14 @@
           <p>I started studying programming since 11th grade of high school.</p>
           <br />
           <a
-            href="https://resume.showwcase.com/rifqihidayat.pdf"
+            href="https://resume.wcase.com/rifqihidayat.pdf"
             download
             class="btn"
             >Download CV</a
           >
         </div>
         <!-- Skil -->
-        <div class="skil-hero show" id="skil">
+        <div class="skil-hero" id="skil">
           <div class="skil-mobile">
             <h2 class="text-skil">My Skill</h2>
             <div class="skil-area">
@@ -118,18 +132,21 @@
         </div>
 
         <!-- Project -->
-        <div class="hero show" id="project">
+        <div class="hero" id="project">
           <h2>Project</h2>
+          <div class="">
           <div class="card-grid" id="conten"></div>
+        </div>
         </div>
 
         <!-- contact -->
-        <div class="contact show" id="contact">
+        <div class="contact" id="contact">
           <div class="card-contact">
             <h3>Contact us</h3>
+            <form name="submit-to-google-sheet">
             <p>
               <input type="text" name="Name" placeholder="Name" />
-              <input type="email" name="email" placeholder="Email" />
+              <input type="email" name="email" placeholder="Email" required />
             </p>
             <p>
               <input
@@ -148,10 +165,11 @@
                 placeholder="Massege"
               ></textarea>
             </p>
-            <input class="btn" type="button" value="Send" />
+            <input class="btn" type="submit" value="Send" />
           </div>
+        </form>
           <div class="info">
-            <i class="fa-solid fa-message fa-10x"></i>
+            <i class="fa-solid fa-message fa-10x" id="info"></i>
           </div>
         </div>
       </section>
@@ -159,7 +177,8 @@
 
     <!-- Fotter -->
     <div class="fotter">
-      <div>&#169; 2022, <a href="/">Muhammad Rifqi Hidayat</a></div>
+      <div class="textf">&#169; 2022, <a href="/">Muhammad Rifqi Hidayat</a></div>
+      
     </div>
 
     <script src="asset/js/script.js"></script>

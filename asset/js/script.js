@@ -1,62 +1,43 @@
-const nav = document.querySelector(".nav"),
-        navList = nav.querySelectorAll("li"),
-        totalNavlist = navList.length,
-        allSection = document.querySelectorAll(".show"),
-        totalSection = allSection.length;
-        home = document.querySelectorAll(".container")
-        for(let i=0; i<totalNavlist; i++){
-            const a = navList[i].querySelector("a")
-            a.addEventListener("click", function() {
-                for(let j=0; j<totalNavlist; j++){
-                    navList[j].querySelector("a").classList.remove("active")
-                }
-                this.classList.add("active")
-                showSection(this);
-                myFunction(this)
-            })
-        }
-        
-        function showSection(element){
-            for(let i=0; i<totalSection; i++){
-                allSection[i].classList.add("show")
-            }
-           const target = element.getAttribute("href").split("#")[1];
-           document.querySelector("#" + target).classList.remove("show");
-        }
-
-        function myFunction() {
-            var x = document.querySelector(".container");
-            if (nav.style.display === "none") {
-              x.style.display = "block";
-            } else {
-              x.style.display = "none";
-            }
-          };
-
-
-
 // ------ content ------- //
 
-const data = "asset/project/project.json";
+const data =
+  "https://script.google.com/macros/s/AKfycbxRNVmgl2NQQv4zC0k8uS3L1pqireUqHcx_Iwvx4D-NMEfzBQC09oOArJ9fXnDeB2--/exec";
 const content = document.querySelector("#conten");
 
 const getContent = () => {
-    fetch(data)
-    .then(response => {
-        return response.json();
-    }).then(responseJson => {
-        project.innerHTML = "";
-        let ctn = responseJson.project;
-        ctn.forEach(item => {
-            project.innerHTML += `
+  fetch(data)
+    .then((response) => {
+      return response.json();
+    })
+    .then((responseJson) => {
+      content.innerHTML = "";
+      let ctn = responseJson.user;
+      ctn.forEach((item) => {
+        content.innerHTML += `
             <div class="card">
                 <img src="${item.img}" alt="">
                 <h3>${item.name}</h3>
                 <p>${item.desct}</p>
-                <a href="${item.link}">Link </a>
+                <a href="${item.link_demo}">Link Demo </a>
+                <a href="${item.link_github}">Link Github </a>
             </div>
-          `
-        });
+          `;
+      });
+    });
+};
+document.addEventListener("DOMContentLoaded", getContent);
+
+// kirim pesan
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbyTjpXUL3xcFN8WddswtD-qdgj-Z4-aoDS2aRlyMTlAhbWuayaI36Pb44BSXs1p2tMY/exec";
+const form = document.forms["submit-to-google-sheet"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      alert("Success! Pesan anda di kirm");
+      form.reset();
     })
-}
-document.addEventListener('DOMContentLoaded', getContent);
+    .catch((error) => console.log("Error!", response));
+});
