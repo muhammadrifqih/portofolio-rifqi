@@ -1,186 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="id">
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="asset/css/style.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="asset/img/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="asset/img/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="asset/img/favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="asset/img/favicon_io/site.webmanifest" />
-    <script
-      src="https://kit.fontawesome.com/7738bb1866.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Rifqi</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="nav" id="nav">
-        <input type="checkbox" id="check" />
-        <label for="check">
-          <i class="fa-solid fa-bars" id="btn"></i>
-          <i class="fa-solid fa-xmark" id="close"></i>
-        </label>
-        <a href="/">Rifqi</a>
-        <ul>
-          <li><a href="#about" class="">About</a></li>
-          <li><a href="#skil" class="">Skil</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <title>Portofolio Muhammad Rifqi Hidayat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007acc;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 0.5rem;
+        }
+        nav {
+            background: #eee;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .project {
+            background: #fff;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Muhammad Rifqi Hidayat</h1>
+        <p>Digital Builder untuk Solusi Masyarakat</p>
     </header>
 
-    <div class="container" id="home">
-      <img src="asset/img/ilustrasi.png" alt="Rifqi" class="foto-profil" />
-      <h1>
-        Hi! My
-        <br />
-        name is <b>Rifqi</b>
-      </h1>
-      <p>I'M Web Developer</p>
-      <div class="social-links">
-        <a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-        <a
-          href="https://www.facebook.com/m.r.hidayat.1654/"
-          target="_blank"
-          class="facebook"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/rifqimuh28"
-          target="_blank"
-          class="instagram"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/muhammad-rifqi-hidayat-a62664224/"
-          target="_blank"
-          class="linkedin"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-      </div>
-    </div>
+    <nav>
+        <a href="#about">Tentang</a>
+        <a href="#portfolio">Portofolio</a>
+        <a href="#contact">Kontak</a>
+    </nav>
 
-    <main>
-      <section class="main">
-        <!-- About -->
-        <div class="about" id="about" data-content>
-          <h2>About Me</h2>
-          <h3>Hi! My name is Rifqi</h3>
-          <p>
-            I'm just someone who likes technology and likes programming
-            languages.
-          </p>
-          <p>I started studying programming since 11th grade of high school.</p>
-          <br />
-          <a
-            href="https://resume.wcase.com/rifqihidayat.pdf"
-            download
-            class="btn"
-            >Download CV</a
-          >
-        </div>
-        <!-- Skil -->
-        <div class="skil-hero" id="skil">
-          <div class="skil-mobile">
-            <h2 class="text-skil">My Skill</h2>
-            <div class="skil-area">
-              <div class="skil-card">
-                <i class="fa-regular fa-circle-check"></i>
-                <h3>HTML</h3>
-                <span>Advanced</span>
-              </div>
-              <div class="skil-card">
-                <i class="fa-regular fa-circle-check"></i>
-                <h3>CSS</h3>
-                <span>Advanced</span>
-              </div>
-              <div class="skil-card">
-                <i class="fa-regular fa-circle-check"></i>
-                <h3>Javascript</h3>
-                <span>Intermediate</span>
-              </div>
-              <div class="skil-card">
-                <i class="fa-regular fa-circle-check"></i>
-                <h3>Bootstrap</h3>
-                <span>Advanced</span>
-              </div>
-              <div class="skil-card">
-                <i class="fa-regular fa-circle-check"></i>
-                <h3>React</h3>
-                <span>Basic</span>
-              </div>
+    <div class="container">
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <p>
+                Saya pengembang yang membangun aplikasi yang dekat dengan kebutuhan masyarakat—mulai dari sistem RT/RW Net, aplikasi kesehatan, dashboard kinerja desa, hingga platform edukasi anak.
+            </p>
+            <p>
+                Stack yang saya gunakan: Laravel (Livewire, Jetstream), Tailwind CSS, Flutter, Nuxt.js, Python, Earth Engine.
+            </p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portofolio</h2>
+
+            <div class="project">
+                <h3>Website Monitoring CCTV Publik</h3>
+                <p>Membuat platform pemantauan CCTV untuk umum dengan tampilan yang mudah diakses dan responsif.</p>
             </div>
-          </div>
-        </div>
 
-        <!-- Project -->
-        <div class="hero" id="project">
-          <h2>Project</h2>
-          <div class="">
-          <div class="card-grid" id="conten"></div>
-        </div>
-        </div>
+            <div class="project">
+                <h3>Dashboard Kinerja Aparat Desa</h3>
+                <p>Sistem untuk mencatat, mengelola, dan melaporkan kinerja aparat desa dan kepala desa secara digital.</p>
+            </div>
 
-        <!-- contact -->
-        <div class="contact" id="contact">
-          <div class="card-contact">
-            <h3>Contact us</h3>
-            <form name="submit-to-google-sheet">
-            <p>
-              <input type="text" name="Name" placeholder="Name" />
-              <input type="email" name="email" placeholder="Email" required />
-            </p>
-            <p>
-              <input
-                class="subject"
-                type="subject"
-                name="subject"
-                placeholder="Subject"
-              />
-            </p>
-            <p>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Massege"
-              ></textarea>
-            </p>
-            <input class="btn" type="submit" value="Send" />
-          </div>
-        </form>
-          <div class="info">
-            <i class="fa-solid fa-message fa-10x" id="info"></i>
-          </div>
-        </div>
-      </section>
-    </main>
+            <div class="project">
+                <h3>Aplikasi Hallodok (Kesehatan Masyarakat)</h3>
+                <p>Aplikasi Android untuk memberikan informasi layanan kesehatan, apotek, dan konsultasi dokter online.</p>
+            </div>
 
-    <!-- Fotter -->
-    <div class="fotter">
-      <div class="textf">&#169; 2022, <a href="/">Muhammad Rifqi Hidayat</a></div>
-      
+            <div class="project">
+                <h3>Sistem Voucher Mikrotik RT/RW Net</h3>
+                <p>Website untuk manajemen voucher Mikrotik otomatis dengan monitoring penghasilan per hari.</p>
+            </div>
+
+            <div class="project">
+                <h3>Aplikasi Edukasi Anak (Warna & Hewan)</h3>
+                <p>Aplikasi Flutter untuk membantu anak-anak belajar warna dan mengenal hewan secara interaktif.</p>
+            </div>
+
+            <div class="project">
+                <h3>Website Check-in Tamu Undangan</h3>
+                <p>Aplikasi berbasis web untuk pencatatan check-in tamu undangan secara digital di acara tertentu.</p>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Kontak</h2>
+            <p>Email: rifqi@example.com</p>
+            <p>WhatsApp: +62xxx-xxxx-xxxx</p>
+        </section>
     </div>
 
-    <script src="asset/js/script.js"></script>
-  </body>
+    <footer>
+        &copy; 2025 Muhammad Rifqi Hidayat. All rights reserved.
+    </footer>
+</body>
 </html>
